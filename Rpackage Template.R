@@ -13,7 +13,7 @@ library(testthat)
 
 ## Check my current working directory path
 getwd()
-setwd("C:/Users/jasmi/Documents/STAT 3701/package template - HW 3")
+setwd("C:/Users/jasmi/Documents/STAT 3701/syed-HW3-package")
 ## Check what is in my current working directory
 dir()
 
@@ -61,7 +61,7 @@ write_file(x=
            #'
            #' @author Charlie Geyer \\email{geyer@umn.edu}
            #' @references \\url{http://www.stat.umn.edu/geyer/3701/data/q1p4.txt}
-           \"d\" ",path=paste(loc,"R","data.R",sep="/"))
+           \"d\" ",path=paste(loc,"R","ddata.R",sep="/"))
 
 # Build comments for the data
 devtools::document(loc)
@@ -77,7 +77,7 @@ write_file(x=
           #'
           #' @author Charlie Geyer \\email{geyer@umn.edu}
           #' @references \\url{http://www.stat.umn.edu/geyer/3701/data/q1p1.txt}
-         \"g\" ",path=paste(loc,"R","data.R",sep="/"))
+         \"g\" ",path=paste(loc,"R","gdata.R",sep="/"))
  
 # Build comments for the data
 devtools::document(loc)
@@ -93,7 +93,7 @@ write_file(x=
            #'
            #' @author Charlie Geyer \\email{geyer@umn.edu}
            #' @references \\url{http://www.stat.umn.edu/geyer/3701/data/q1p3.txt}
-           \"b\" ",path=paste(loc,"R","data.R",sep="/"))
+           \"b\" ",path=paste(loc,"R","bdata.R",sep="/"))
 
 # Build comments for the data
 devtools::document(loc) 

@@ -149,7 +149,7 @@ func6 <- function(x){
 
 * computing MLE for a gamma distribution
 ```{r warning=FALSE}
-
+x <- scan(url("http://www.stat.umn.edu/geyer/3701/data/q1p3.txt"))
 func7 <- function(x, func, interval){
   
   f7 <- function(theta, x)
@@ -249,25 +249,6 @@ Fun3(a)
 
 * examples for function comparable to apply()
 ```{r}
-fred <- matrix(1:6, ncol = 2)
-myapply(fred,1,"mean")
-myapply(fred,2,"mean")
-
- myapply(fred,1,"max")
- myapply(fred,2,"max")
- 
- myapply(fred,1,function(x) quantile(x,0.75))
- myapply(fred,2,function(x) quantile(x,0.75))
- 
- myapply(fred, 1, quantile, probs=.75)
- myapply(fred, 2, quantile, probs=.75)
- 
- myapply(fred, 1, quantile, probs = (1:3)/4)
- myapply(fred, 2, quantile, probs = (1:3)/4)
- 
- moo <- myapply(fred, 1, mean)
- fred.mean.free.rows <- sweep(fred, 1, moo)
- rowMeans(fred.mean.free.rows)
 
 myapply <- function(X, MARGIN, FUN, ...)
 {
