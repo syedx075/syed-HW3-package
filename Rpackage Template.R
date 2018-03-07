@@ -142,7 +142,7 @@ use_package_doc(loc)
 devtools::document(loc)
 
 ## Let's build a vignette
-devtools::use_vignette("introduction",pkg=loc)
+devtools::use_vignette("vignette",pkg=loc)
 
 # At this point let's do an R Check, again
 # And an R build
